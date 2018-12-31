@@ -1,0 +1,36 @@
+node_modules
+bower_components
+_site
+_posts
+
+#client stuff
+# See client/.gitignore
+
+# Server stuff
+# See server/.gitignore
+
+
+# Ignore configuration and automatically generated cruft
+dbconfig.php
+sitemap.xml
+*.log
+.sass-cache
+
+# Operating system files
+.Spotlight-V100
+.Trashes
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+
+#Broccoli folder
+tmp
+
+#Editor files
+*.sublime-*
+*.idea
+
+# ignore compiled files
+lib
+zsh-syntax-highlighting
