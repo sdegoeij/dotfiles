@@ -3,13 +3,6 @@ bower_components
 _site
 _posts
 
-#client stuff
-# See client/.gitignore
-
-# Server stuff
-# See server/.gitignore
-
-
 # Ignore configuration and automatically generated cruft
 dbconfig.php
 sitemap.xml
@@ -34,3 +27,5 @@ tmp
 # ignore compiled files
 lib
 zsh-syntax-highlighting
+
+config.yml

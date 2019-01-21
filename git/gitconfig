@@ -1,0 +1,44 @@
+[user]
+  name = GIT_NAME
+  email = GIT_EMAIL
+
+[alias]
+  co = checkout
+  st = status -sb
+
+  open = !$HOME/.dotfiles/git/git-open
+  hub = !$HOME/.dotfiles/git/git-open
+  wtf = !$HOME/.dotfiles/git/git-wtf
+  winner = !$HOME/.dotfiles/git/git-winner
+  promote = !$HOME/.dotfiles/git/git-promote
+
+  # Show conflicting paths
+  conflicts = diff --name-only --diff-filter=U
+
+  # Push and track
+  publish = push -u
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = auto
+
+[core]
+  excludesfile = !$HOME/.dotfiles/git/gitignore
+  editor = code
+  autocrlf = input
+  pager = less -FRSX
+
+[apply]
+  whitespace = nowarn
+
+[github]
+  user = GITHUB_USER
+  token = GITHUB_TOKEN
+
+[push]
+  default = current
+
+[credential]
+  helper = osxkeychain
