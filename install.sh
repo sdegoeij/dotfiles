@@ -10,17 +10,17 @@ fi
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 # gitconfig and ignore
-. config.ini
-gitconfig=$(<git/gitconfig)
-gitconfig=${gitconfig//'GIT_NAME'/$name}
-gitconfig=${gitconfig//'GIT_EMAIL'/$email}
-gitconfig=${gitconfig//'GITHUB_USER'/$user}
-gitconfig=${gitconfig//'GITHUB_TOKEN'/$token}
-
 if [ -f $HOME/.gitconfig ]; then
     rm $HOME/.gitconfig
 fi
-ln -s $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig
+
+cp git/gitconfig $HOME/.gitconfig
+. config.ini
+
+sed -in "s/GIT_NAME/$name/" $HOME/.gitconfig
+sed -in "s/GIT_EMAIL/$email/" $HOME/.gitconfig
+sed -in "s/GITHUB_USER/$user/" $HOME/.gitconfig
+sed -in "s/GITHUB_TOKEN/$token/" $HOME/.gitconfig
 
 # Prompt
 if [ ! -d $HOME/.zfunctions ]; then
