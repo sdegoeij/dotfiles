@@ -6,6 +6,10 @@
   co = checkout
   st = status -sb
 
+  bs = !$HOME/.dotfiles/git/git-branch-status
+  branch-status = !$HOME/.dotfiles/git/git-branch-status
+  gone = !$HOME/.dotfiles/git/git-gone
+  branch-clean = !$HOME/.dotfiles/git/git-gone
   open = !$HOME/.dotfiles/git/git-open
   hub = !$HOME/.dotfiles/git/git-open
   wtf = !$HOME/.dotfiles/git/git-wtf
