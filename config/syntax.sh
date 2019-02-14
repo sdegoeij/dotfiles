@@ -1,8 +1,5 @@
 # Setup syntax highlighting.
 
-# Source the plugin https://github.com/zsh-users/zsh-syntax-highlighting
-source ~/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # Color overrides
 ZSH_HIGHLIGHT_STYLES[default]='none'
 ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
