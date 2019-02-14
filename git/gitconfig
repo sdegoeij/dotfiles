@@ -30,7 +30,7 @@
 
 [core]
   excludesfile = !$HOME/.dotfiles/git/gitignore
-  editor = code
+  editor = code --wait
   autocrlf = input
   pager = less -FRSX
 
