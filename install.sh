@@ -3,6 +3,10 @@ if [ ! -d $HOME/.dotfiles/zsh-syntax-highlighting ]; then
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.dotfiles/zsh-syntax-highlighting
 fi
 
+if [ ! -d $HOME/.dotfiles/zsh-history-substring-search ]; then
+    git clone https://github.com/zsh-users/zsh-history-substring-search.git $HOME/.dotfiles/zsh-history-substring-search
+fi
+
 # .zshrc
 if [ -f $HOME/.zshrc ]; then
     rm $HOME/.zshrc
