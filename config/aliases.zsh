@@ -37,8 +37,8 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 alias mv='mv -i'
 alias md=mkdir
 alias ..='cd ..;' # can then do .. .. .. to move up multiple directories.
-alias ...='cd .. ; cd ..' #also see up() in functions.sh
-alias tree='tree -CAFa -I "CVS|*.*.package|.svn|.git|.hg|node_modules|bower_components" --dirsfirst'
+alias ...='cd .. ; cd ..'
+alias tree='tree -CAFa -I "CVS|*.*.package|.svn|.git|.hg|node_modules|bower_components" --dirsfirst' # brew install tree
 alias ducks='du -cks * | sort -rn|head -11' # Lists the size of all the folders
 
 alias todo='grep -ni TODO *'
@@ -87,7 +87,7 @@ alias fs="stat -f \"%z bytes\""
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
+alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias whois="whois -h whois-servers.net"
 

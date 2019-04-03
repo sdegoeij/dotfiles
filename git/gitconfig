@@ -29,7 +29,7 @@
   ui = auto
 
 [core]
-  excludesfile = !$HOME/.dotfiles/git/gitignore
+  excludesfile = /Users/sander.degoeij/.dotfiles/git/gitignore
   editor = code --wait
   autocrlf = input
   pager = less -FRSX
