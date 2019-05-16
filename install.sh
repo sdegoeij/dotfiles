@@ -19,7 +19,7 @@ if [ -f $HOME/.gitconfig ]; then
 fi
 
 cp git/gitconfig $HOME/.gitconfig
-. config.ini
+. $HOME/.dotfiles/config.ini
 
 sed -in "s/GIT_NAME/$name/" $HOME/.gitconfig
 sed -in "s/GIT_EMAIL/$email/" $HOME/.gitconfig
@@ -31,7 +31,7 @@ if [ ! -d $HOME/.zfunctions ]; then
     mkdir $HOME/.zfunctions
 fi
 
-if [ ! -f $HOME/.dotfiles/prompt/pure.zsh ]; then
+if [ ! -f $HOME/.zfunctions/pure_pure_setup ]; then
     ln -s "$HOME/.dotfiles/prompt/pure.zsh" "$HOME/.zfunctions/prompt_pure_setup"
     ln -s "$HOME/.dotfiles/prompt/async.zsh" "$HOME/.zfunctions/async"
 fi

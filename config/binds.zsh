@@ -12,6 +12,10 @@ bindkey "^B"      backward-char                        # ctrl-b
 bindkey "^[[3~"   delete-char
 bindkey "^[3;5~"  delete-char
 
+# Arrows
+bindkey "^[[C" forward-char
+bindkey "^[[D" backward-char
+
 # History substring search.
 bindkey '^[[A'    history-substring-search-up          # up arrow
 bindkey '^[[B'    history-substring-search-down        # down arrow
